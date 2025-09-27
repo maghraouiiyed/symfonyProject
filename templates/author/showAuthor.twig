@@ -1,0 +1,31 @@
+{{nom}}
+
+{{nom|upper}}
+
+{#comment#}
+{% set A=1%}
+{{A}}
+
+{% if 'Fablen' starts with 'F' %}
+    commence par F
+{% endif %}
+
+{% if 'Fablen' ends with 'n' %}
+    finit par n
+{% endif %}
+<a href="{{path('afficher')}}">lien1</a>
+<a href="{{url('afficher')}}">lien2</a>
+
+<br>
+
+<img src="{{ asset('assets/images/slimenlabyedh.png') }}">
+<br>
+
+<h1>Détails de l'auteur</h1>
+
+<p><strong>Nom :</strong> {{ author.username|upper }}</p>
+<p><img src="{{ asset(author.picture) }}" alt="{{ author.username }}" width="150"></p>
+<p><strong>Email :</strong> {{ author.email }}</p>
+<p><strong>Nombre de livres :</strong> {{ author.nb_books }}</p>
+
+<p><a href="{{ path('list_authors') }}">Retour à la liste</a></p>

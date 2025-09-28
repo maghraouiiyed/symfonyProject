@@ -16,7 +16,7 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerF9DSeLC\App_KernelDevDebugContainer([
     'container.build_hash' => 'F9DSeLC',
-    'container.build_id' => 'aec69d07',
-    'container.build_time' => 1758712329,
+    'container.build_id' => 'ff3a0bc3',
+    'container.build_time' => 1759062927,
     'container.runtime_mode' => \in_array(\PHP_SAPI, ['cli', 'phpdbg', 'embed'], true) ? 'web=0' : 'web=1',
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerF9DSeLC');

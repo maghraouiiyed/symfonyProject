@@ -33,9 +33,9 @@ final class AuthorController extends AbstractController
     public function listAuthors():Response
     {
         $authors = array(
-        array('id' => 1, 'picture' => '/images/Victor-Hugo.png','username' => 'Victor Hugo', 'email' => 'victor.hugo@gmail.com ', 'nb_books' => 100),
-        array('id' => 2, 'picture' => '/images/william-shakespeare.jpg','username' => ' William Shakespeare', 'email' =>  ' william.shakespeare@gmail.com', 'nb_books' => 200 ),
-        array('id' => 3, 'picture' => '/images/Taha_Hussein.jpg','username' => 'Taha Hussein', 'email' => 'taha.hussein@gmail.com', 'nb_books' => 300),
+        array('id' => 1, 'picture' => '/assets/images/Victor-Hugo.png','username' => 'Victor Hugo', 'email' => 'victor.hugo@gmail.com ', 'nb_books' => 100),
+        array('id' => 2, 'picture' => '/assets/images/william-shakespeare.jpg','username' => ' William Shakespeare', 'email' =>  ' william.shakespeare@gmail.com', 'nb_books' => 200 ),
+        array('id' => 3, 'picture' => '/assets/images/Taha_Hussein.jpg','username' => 'Taha Hussein', 'email' => 'taha.hussein@gmail.com', 'nb_books' => 300),
         );
 
         $totalAuthors = count($authors);
